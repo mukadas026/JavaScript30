@@ -1,0 +1,85 @@
+:root{
+    --border:rgb(0, 195, 255);
+    --key-color:; 
+    --key-container:;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size:;
+    font-family:;
+}
+
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("./cosmos.jpg");
+    /* background: black; */
+}
+.info{
+    position: absolute;
+    /* left: 40%; */
+    top: 20%;
+    text-align: center;
+    width: 100%;
+}
+.read{
+    /* text-align: center; */
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+}
+u{
+    color: blue;
+}
+span{
+    color: yellow;
+}
+#content-group{
+    position: relative;
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    border-radius: 1rem;
+    box-shadow: .21rem .21rem .21rem 0 white;
+
+}
+.key-holder{
+    width: 4rem;
+    height: 4rem;
+    border: 5px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+}
+.key{
+    color: white;
+    font-weight: 900;
+}
+.glow{
+    animation: pop .25s linear;
+}
+@keyframes pop {
+    from{
+        /* border: 0; */
+
+    }
+    to{
+        border: 5px solid var(--border);
+        box-shadow: 0 0 5rem 0 var(--border);
+    }
+    
+}
+.sound{
+    color: blue;
+}

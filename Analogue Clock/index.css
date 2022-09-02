@@ -1,0 +1,69 @@
+:root{
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/clock1.jpg');
+    background-size: cover;
+}
+#container{ 
+    width: 50%;
+    height: 80%;
+    position: relative;
+    left: 25%;
+    top: 10%;
+}
+#ring{
+    width: 65%;
+    height: 80%;
+    background: url('./images/watch.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    position: relative;
+    top: 10%;
+    left: 17%;
+    border: .251rem solid rgb(0, 17, 255);
+    border-radius: 50%;
+}
+.center{
+    width: 4%;
+    height: 4%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 48%;
+    left: 48%;
+    z-index: 1;
+}
+.hands{
+    position: absolute;
+    width: 2%;
+    height: 40%;
+    left: 49%;
+    top: 10%;
+    background: rgb(0, 0, 0);
+    transform-origin: 50% 100%;
+    border-radius: 10rem;
+}
+#hour{
+    height: 25%;
+    top: 25%;
+}
+#minute{
+    height: 35%;
+    top: 15%;
+}
+#seconds{
+    height: 40%;
+}

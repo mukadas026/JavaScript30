@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update CSS With JS</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <main id="main">
+        <section class="header">
+            <p class="instruction">Pull the sliders to edit the image</p>
+        </section>
+        <section class="sliders-container">
+            <div class="slider-section">
+                <p class="slider-label">
+                    Padding:
+                </p>
+                <input type="range" class="slider" id="padding">
+            </div>
+
+            <div class="slider-section">
+                <p class="slider-label">
+                    Blur:
+                </p>
+                <input type="range" class="slider" id="blur">
+            </div>
+            <div class="slider-section">
+                <p class="slider-label">
+                    Border-color:
+                </p>
+                <input type="color" class="slider color" id="color" colorpick-eyedropper-active="false">
+            </div>
+        </section>
+        <div class="do-image">
+        <div class="img-container">
+            <img src="./Images/cosmos.jpg" alt="" class="image" id="image">
+        </div>
+        <div class="img-selector">
+            <input type="file" id="file" class="files">
+            <!-- <button type="button" id="button">Load File</button> -->
+            <label for="file">Pick an image from your storage</label>
+        </div>
+        
+        </div>
+    </main>
+</body>
+</html>

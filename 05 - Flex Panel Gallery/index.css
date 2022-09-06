@@ -1,0 +1,190 @@
+:root{
+
+}
+*, body{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.img-container{
+    flex-grow: 1;
+    flex-basis: 20%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+p{
+    font-size: 200%;
+    position: relative;
+}
+p:nth-child(1){
+    bottom: 20%;
+}
+p:nth-child(3){
+    top: 20%;
+}
+.dropin{
+    visibility: visible;
+    animation: dropin 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+
+}
+@keyframes dropin {
+    0%{
+        bottom: 20%;
+    }
+    100%{
+        bottom: 0%;
+    }
+
+}
+.scaleup{
+    visibility: visible;
+    animation: scaleup 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+}
+@keyframes scaleup {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+.popin{
+    visibility: visible;
+    animation: popin 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+
+}
+@keyframes popin {
+    0%{
+        top: 20%;
+    }
+    100%{
+        top: 0%;
+    }
+
+}
+.dropout{
+    animation: dropout 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84)
+}
+@keyframes dropout {
+    0%{
+        bottom: 0%;
+    }
+    20%{
+        bottom: -10%;
+    }
+    100%{
+        visibility: visible;
+        bottom: 20%;
+    }
+}
+
+.scaledown{
+    animation: scaledown 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+}
+@keyframes scaledown {
+    0%{
+        transform: scale(2);
+    }
+    20%{
+        transform: scale(2.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.popout{
+    animation: popout 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+}
+@keyframes popout {
+    0%{
+        top: 00%;
+    }
+    20%{
+        top: -10%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+
+
+
+.img-container:nth-child(1){
+    background: url('./images/pexels1.jpg');
+}
+.img-container:nth-child(2){
+    background: url('./images/pexels2.jpg');
+    background-size: cover;
+}
+.img-container:nth-child(3){
+    background: url('./images/pexels3.jpg');
+}
+.img-container:nth-child(4){
+    background: url('./images/pexels4.jpg');
+}
+.img-container:nth-child(5){
+    background: url('./images/clock2.jpg');
+    
+}
+
+
+p{
+
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+.stretch{
+    animation: stretch 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+}
+
+
+
+@keyframes stretch {
+    0%{
+        flex-basis: 20%;
+    }
+    20%{
+        flex-basis: 15%;
+    }
+    100%{
+        flex-basis: 60%;
+    }
+}
+
+.squeeze{
+    animation: squeeze 1s forwards cubic-bezier(0.54, 0.52, 0.21, 0.84);
+}
+@keyframes squeeze {
+    0%{
+        flex-basis: 60%;
+    }
+    20%{
+        flex-basis: 65%;
+    }
+    100%{
+        flex-basis: 20%;
+    }
+}

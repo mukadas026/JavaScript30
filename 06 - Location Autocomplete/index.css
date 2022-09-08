@@ -1,0 +1,70 @@
+:root{
+
+}
+*, body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    background: black;
+}
+
+#main{
+
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+}
+span{
+    font-size: inherit;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(217, 255, 0);
+}
+#text{
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 2rem;
+    padding-left: .5rem;
+    margin: auto;
+    transform: translatey(10rem);
+    text-align: center;
+    background: white;
+    outline: none;
+    border-top: .5rem double rgb(96, 181, 255);
+}
+#form{
+    /* background: red; */
+    width: 20rem;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    transform: translatey(11rem);
+
+}
+#form p{
+    transform: skew(5deg, 358deg) ;
+
+    border-bottom: .51rem solid white;
+
+    background: rgb(96, 181, 255);
+}
+.pop{
+    animation: pop .5s linear forwards;
+    position: relative;
+    /* left: 10% */
+}
+
+@keyframes pop {
+    from{
+        opacity: 0;
+        bottom: 100%;
+    }
+    to{
+        opacity: 1;
+        bottom: 0;
+    }
+}

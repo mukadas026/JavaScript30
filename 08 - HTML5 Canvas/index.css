@@ -1,0 +1,22 @@
+body, *{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+canvas{
+    border: 1px solid red;
+    
+}
+
+#main{
+    /* width: 10vw;
+    height: 10vh;
+    background: red;
+    position: relative;
+    border-radius: 50%; */
+}

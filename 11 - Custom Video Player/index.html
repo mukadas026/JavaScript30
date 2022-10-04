@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="https://kit.fontawesome.com/4b98d7cc76.js" crossorigin="anonymous"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main id="main">
+        <section id="section">
+        <video controls autopictureinpicture id="vid">
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+        <ul id="vid-controls">
+            <li><progress min="0" value="0" id="prog"></progress></li>
+            <li><button type="button" id="pp"><i class="fa-sharp fa-solid custom fa fa-pause"></i></i></button></li>
+            <li id="vol"><button id="vol-btn"><i class="custom fa-sharp fa-solid fa fa-volume"></i></i></button><input type="range" id="volume" value="100"></li>
+            <li><button type="button" id="fs">Fullscreen</button></li>
+            <li><button type="button" id="sb">-10s</button><button type="button" id="sa">+10s</button></li>
+            
+        </ul>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

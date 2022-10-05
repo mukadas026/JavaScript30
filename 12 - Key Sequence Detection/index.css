@@ -1,0 +1,40 @@
+body, *{
+    padding: 0;
+    margin: 0;
+}
+#section{
+    width: 60vw;
+    height: 60vh;
+    /* background: red; */
+    margin: auto;
+    position: relative;
+    top: 5rem;
+}
+#input{
+    display: block;
+    margin: auto;
+    width: 20rem;
+    height:2rem;
+    border-radius: .51rem;
+    /* outline: none; */
+    /* border: none; */
+    box-shadow: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 150%;
+    
+}
+#input:focus{
+    color: rebeccapurple;
+}
+p{
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 200%;
+}
+#para{
+    height: 80%;;
+}

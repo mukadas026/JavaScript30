@@ -1,0 +1,60 @@
+body, *{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#check{
+    width: 100vw;
+    height: 200px;
+    background: purple;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+#main{
+    width: 100vw;
+    height: fit-content;
+}
+.sections{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: red;
+    /* justify-content: center; */
+}
+.para{
+    text-align: center;
+    opacity: 0;
+    background-color: red;
+    /* line-height: 60vh; */
+}
+.slide-in{
+    animation: slidein .5s linear forwards;
+}
+
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translatex(0);
+    }
+    to{
+        opacity: 1;
+        transform: translatex(50%);
+    }
+}
+
+.slide-out{
+    animation: slideout .5s linear forwards;
+}
+
+@keyframes slideout{
+    from{
+        opacity: 1;
+        transform: translatex(50%);
+    }
+    to{
+        opacity: 0;
+        transform: translatex(0%);
+    }
+}

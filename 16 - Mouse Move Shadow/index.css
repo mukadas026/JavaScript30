@@ -1,0 +1,22 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    /* background: red; */
+    position: relative;
+}
+#test{
+    width: fit-content;
+    min-height: fit-content;
+    /* position: absolute; */
+    margin: auto;
+    /* padding: 1rem; */
+    /* background: blue; */
+    transform: translateY(40vh);
+    font-size: 7rem;
+    font-weight: 900;
+    /* text-shadow: 10rem 10rem 0rem blue, 2rem 2rem red; */
+}

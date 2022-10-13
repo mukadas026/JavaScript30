@@ -1,0 +1,46 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+
+#div{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 0, .7), rgba(255, 0, 255, .7))
+}
+
+#input{
+    display: block;
+    width: 50rem;
+    height: 15rem;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: transparent;
+    border-bottom: 1rem double cyan;
+    box-shadow: .21rem .21rem 1rem 0rem blue;
+    padding: 1rem;
+}
+#btn{
+    display: block;
+    width: max-content;
+    padding: .5rem;
+    margin: auto;
+    height: max-content;
+    font-size: 1.5rem;
+    position: relative;
+    top: 10rem;
+    /* left: 10rem; */
+    border: transparent;
+    border-radius: .52rem;
+    background: green;
+    color: rgb(255, 255, 255);
+    transition: all .35s;
+}
+#btn:hover{
+    cursor: pointer;
+    background: rgb(0, 255, 0);
+    color: rgb(128, 128, 128);
+}

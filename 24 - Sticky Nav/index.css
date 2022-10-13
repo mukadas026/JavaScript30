@@ -1,0 +1,73 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.3rem;
+    scroll-behavior: smooth;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+#header{
+    width: 100vw;
+    height: 60vh;
+    /* background: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 2fr;
+    position: relative;
+
+    
+}
+#title{
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+#text{
+    font-size: 300%;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-shadow: .21rem .21rem .51rem rgb(92, 92, 92);
+}
+#nav{
+    grid-row: 2;
+    /* justify-self: end; */
+    align-self: center;
+    background: black;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    
+}
+#insert{
+    color: black;
+    height: 100%;
+    line-height: 4.5rem;
+    width: 0rem;
+    background: rgb(255, 255, 255);
+}
+#nav-bar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+.nav-item{
+    color: white;
+    list-style-type: none;
+}
+
+/* Main section */
+
+#main{
+
+    width: 600px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: .5rem .5rem 1rem grey;
+    padding: 5rem;
+    line-height: 2rem;
+}

@@ -1,0 +1,57 @@
+body, *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: scroll;
+}
+div{
+    position: relative;
+    top: 10px;
+    width: 99vw;
+    height: 95vh;
+    margin: auto;
+    border: 5px solid cyan;
+    overflow-x: scroll;
+}
+#main{ 
+    display: flex;
+    /* flex-wrap: nowrap; */
+    min-width: max-content;
+    min-height: 100vh;
+    align-items: center;
+    overflow-x: scroll;
+    transform-style: preserve-3d;
+    /* background: rgb(0, 0, 51); */
+    position: relative;
+    will-change: transform;
+    white-space: no-wrap;
+    /* perspective: 111500px; */
+    border: 5px dashed green;
+}
+.cards{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 80vh;
+    font-size: 4rem;
+    width: 400px;
+    height: 80vh;
+    overflow: auto;
+    background: red;
+    border: 15px solid brown;
+    /* transform-origin: 0% 50%; */
+    transform-style: preserve-3d;
+
+    /* will-change: transform; */
+    /* transform: rotate3d(0, 1, -.1, 60deg) scalex(1.5) skew(-5deg); */
+    /* transform: perspective(3000px) rotate3d(0, 1, 0, 45deg); */
+}
+.cards:hover{
+    cursor: pointer;
+}
+
+
